@@ -26,7 +26,8 @@ public class UpdateEnemies : MonoBehaviour {
 
     public void FindEnemiesLeft ()
     {
-        --enemies2;
+        enemies = GameObject.FindGameObjectsWithTag("AI");
+        enemies2 = enemies.Length;
         // Update HUD
         if (enemies2 <= 0)
         {

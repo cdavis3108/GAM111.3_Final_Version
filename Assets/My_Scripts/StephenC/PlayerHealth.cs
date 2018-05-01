@@ -64,7 +64,7 @@ public class PlayerHealth : MonoBehaviour
     // energy and damage
     public void TakeDamage(float damageTake)
     {
-        Debug.Log("Player taking damage");
+        //Debug.Log("Player taking damage");
         damaged = true;
         healthValue -= damageTake;
 

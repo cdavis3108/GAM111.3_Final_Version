@@ -124,7 +124,7 @@ public class Target : MonoBehaviour
     {
         if (gameObject.tag == "AI")
         {
-            Debug.Log("AI is dying");
+            //Debug.Log("AI is dying");
             MyAnimator.SetBool("hasTarget", false);
             MyAnimator.SetBool("powerDown", true);
             rb.constraints = RigidbodyConstraints.None;
@@ -139,7 +139,7 @@ public class Target : MonoBehaviour
     void self_Remove()
     {
         ScoreManager.score += scoreValue;
-        Debug.Log(ScoreManager.score);
+        //Debug.Log(ScoreManager.score);
         updateEnemiesSctipt.FindEnemiesLeft();
 
         Destroy(gameObject, 5f);
