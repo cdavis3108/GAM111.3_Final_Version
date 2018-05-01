@@ -49,9 +49,17 @@ public class Target : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManger");
         updateEnemiesSctipt = gameManager.GetComponent<UpdateEnemies>();
         difficultySetter = GameObject.FindGameObjectWithTag("DifficultySetting");
-        getdifficultysetting = difficultySetter.GetComponent<DifficultySetting>();
 
-        healthMax = getdifficultysetting.maxHealth;
+        if (difficultySetter != null)
+        {
+            getdifficultysetting = difficultySetter.GetComponent<DifficultySetting>();
+
+            healthMax = getdifficultysetting.maxHealth;
+        }
+        else
+        {
+            healthMax = 50f;
+        }
     }
 
     void Update()

@@ -53,9 +53,17 @@ public class AIMedium : AI {
         transform.rotation = Random.rotation;
 
         difficultySetter = GameObject.FindGameObjectWithTag("DifficultySetting");
-        getdifficultysetting = difficultySetter.GetComponent<DifficultySetting>();
 
-        damage = getdifficultysetting.damage;
+        if (difficultySetter != null)
+        {
+            getdifficultysetting = difficultySetter.GetComponent<DifficultySetting>();
+
+            damage = getdifficultysetting.damage;
+        }
+        else
+        {
+            damage = 10f;
+        }
     }
 	
 	// Update is called once per frame
