@@ -9980,11 +9980,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720269858097058, guid: 3b29524c54e2e0443940b390181d6560, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4720269858097058, guid: 3b29524c54e2e0443940b390181d6560, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720269858097058, guid: 3b29524c54e2e0443940b390181d6560, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b29524c54e2e0443940b390181d6560, type: 2}
