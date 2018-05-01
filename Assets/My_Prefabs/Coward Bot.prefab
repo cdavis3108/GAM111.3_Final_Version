@@ -856,7 +856,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 10
   m_Range: 7.25
   m_SpotAngle: 106.94691
   m_CookieSize: 10
@@ -897,7 +897,7 @@ MonoBehaviour:
   moveSpeed: 15
   walkSpeed: 0
   turnSpeed: 1.2
-  fieldOfView: {fileID: 0}
+  fieldOfView: {fileID: 114824338354339692}
   patrols: 0
   ranged: 0
   coward: 1
@@ -915,10 +915,11 @@ MonoBehaviour:
   meleeRange: 5
   path: {fileID: 0}
   pathnodes: []
-  agent: {fileID: 0}
+  agent: {fileID: 195447314112244224}
   idling: 0
   getdifficultysetting: {fileID: 0}
   difficultySetter: {fileID: 0}
+  spotlight: {fileID: 108843073952836216}
 --- !u!114 &114461814425629920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1027,7 +1028,7 @@ MonoBehaviour:
     m_Bits: 256
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 1
   visibleTargets: []
 --- !u!114 &114850339085476566
 MonoBehaviour:
