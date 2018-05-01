@@ -851,7 +851,7 @@ MonoBehaviour:
     m_Bits: 256
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 1
   visibleTargets: []
 --- !u!114 &114276269788368432
 MonoBehaviour:
@@ -986,7 +986,7 @@ MonoBehaviour:
   moveSpeed: 0
   walkSpeed: 0
   turnSpeed: 1
-  fieldOfView: {fileID: 0}
+  fieldOfView: {fileID: 114060114800825688}
   patrols: 0
   ranged: 1
   coward: 0
@@ -1005,10 +1005,11 @@ MonoBehaviour:
   meleeRange: 5
   path: {fileID: 0}
   pathnodes: []
-  agent: {fileID: 0}
+  agent: {fileID: 195374119756041728}
   idling: 0
   getdifficultysetting: {fileID: 0}
   difficultySetter: {fileID: 0}
+  spotlight: {fileID: 108282364784946812}
 --- !u!136 &136353316820465152
 CapsuleCollider:
   m_ObjectHideFlags: 1
