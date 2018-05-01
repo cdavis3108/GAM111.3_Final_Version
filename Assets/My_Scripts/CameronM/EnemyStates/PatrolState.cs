@@ -43,6 +43,7 @@ public class PatrolState : IEnemyState
     private void Patrol()
     {
         patrolTimer += Time.deltaTime;
+        enemy.spotlight.color = Color.yellow;
 
         if(patrolTimer >= patrolDuration)
         {

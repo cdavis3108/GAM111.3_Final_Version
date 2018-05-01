@@ -15,6 +15,7 @@ public class AttackState : IEnemyState
     {
         if (enemy.TargetAcquired != null)
         {
+            enemy.spotlight.color = Color.red;
             if (enemy.coward)
             {
                 //Do nothing, can't attack

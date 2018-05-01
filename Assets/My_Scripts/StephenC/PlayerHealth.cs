@@ -30,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     // damage bar
     public Image healthBar;
     public float healthMax = 100f;
+    [SerializeField]
     private float healthValue;
     public Rigidbody rb;
 

@@ -16,6 +16,7 @@ public class IdleState : IEnemyState
         this.enemy = enemy;
         Timer = 0;
         patrolling = false;
+        enemy.spotlight.enabled = false;
     }
 
     public void Execute()
@@ -40,7 +41,7 @@ public class IdleState : IEnemyState
 
     public void Exit()
     {
-        
+        enemy.spotlight.enabled = true;
     }
 
     public void OnTriggerEnter(Collider other)

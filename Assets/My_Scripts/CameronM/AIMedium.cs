@@ -38,6 +38,7 @@ public class AIMedium : AI {
     public bool idling;
     public DifficultySetting getdifficultysetting;
     public GameObject difficultySetter;
+    public Light spotlight;
 
     // Use this for initialization
     public override void Start ()
@@ -47,6 +48,7 @@ public class AIMedium : AI {
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
         fieldOfView = GetComponent<FieldOfView>();
+        //spotlight = GetComponentInChildren<Light>();
         
         if (path != null)
         pathnodes = path.GetComponentsInChildren<Transform>();
@@ -194,6 +196,7 @@ public class AIMedium : AI {
             }
             else if (hit.collider.tag == "Player")
             {
+
                 PlayerHealth target = hit.transform.GetComponent<PlayerHealth>();
                 if (target != null)
                 {

@@ -136,6 +136,7 @@ public class Target : MonoBehaviour
             gameObject.GetComponent<AIMedium>().enabled = false;
             gameObject.GetComponent<FieldOfView>().enabled = false;
             gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            gameObject.GetComponentInChildren<Light>().enabled = false;
         }
     }
 
