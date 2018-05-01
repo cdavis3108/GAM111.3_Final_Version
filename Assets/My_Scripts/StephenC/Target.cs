@@ -48,7 +48,9 @@ public class Target : MonoBehaviour
         //Debug.Log(" - - - - -");
         gameManager = GameObject.FindGameObjectWithTag("GameManger");
         updateEnemiesSctipt = gameManager.GetComponent<UpdateEnemies>();
-        difficultySetter = GameObject.FindGameObjectWithTag("DifficultySetting");
+
+        if (GameObject.FindGameObjectWithTag("DifficultySetting") != null)
+            difficultySetter = GameObject.FindGameObjectWithTag("DifficultySetting");
 
         if (difficultySetter != null)
         {
@@ -125,6 +127,7 @@ public class Target : MonoBehaviour
         if (gameObject.tag == "AI")
         {
             //Debug.Log("AI is dying");
+            gameObject.tag = "Dead";
             MyAnimator.SetBool("hasTarget", false);
             MyAnimator.SetBool("powerDown", true);
             rb.constraints = RigidbodyConstraints.None;

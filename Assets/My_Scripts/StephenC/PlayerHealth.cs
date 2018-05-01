@@ -87,6 +87,7 @@ public class PlayerHealth : MonoBehaviour
         rb.constraints = RigidbodyConstraints.None;
         //Destroy(gameObject);
         //Player.gameObject.SetActive(false);\
+        //GetComponent<RigidbodyFirstPersonController>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

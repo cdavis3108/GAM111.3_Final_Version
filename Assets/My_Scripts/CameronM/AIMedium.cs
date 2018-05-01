@@ -48,11 +48,13 @@ public class AIMedium : AI {
         agent.autoBraking = false;
         fieldOfView = GetComponent<FieldOfView>();
         
+        if (path != null)
         pathnodes = path.GetComponentsInChildren<Transform>();
 
         transform.rotation = Random.rotation;
 
-        difficultySetter = GameObject.FindGameObjectWithTag("DifficultySetting");
+        if (GameObject.FindGameObjectWithTag("DifficultySetting") != null)
+            difficultySetter = GameObject.FindGameObjectWithTag("DifficultySetting");
 
         if (difficultySetter != null)
         {
@@ -273,10 +275,10 @@ public class AIMedium : AI {
 
     void GotoNextPoint()
     {
-        if (pathnodes.Length == 0)
+        if (pathnodes.Length < 1)
             return;
 
-        if (TargetAcquired == null)
+        if (TargetAcquired == null && path != null)
         {
             agent.destination = pathnodes[destPoint].position;
 

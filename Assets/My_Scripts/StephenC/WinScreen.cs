@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinScreen : MonoBehaviour
+namespace UnityStandardAssets.Characters.FirstPerson
 {
-    public GameObject Player;
-    
-    void OnTriggerEnter(Collider other)
+    public class WinScreen : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        public GameObject Player;
+
+        void OnTriggerEnter(Collider other)
         {
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene(4);
+            if (other.CompareTag("Player"))
+            {
+                other.GetComponent<RigidbodyFirstPersonController>().enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene(4);
+            }
         }
     }
 }
