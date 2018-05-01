@@ -779,6 +779,8 @@ MonoBehaviour:
   pathnodes: []
   agent: {fileID: 0}
   idling: 0
+  getdifficultysetting: {fileID: 0}
+  difficultySetter: {fileID: 0}
 --- !u!114 &114461814425629920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -887,7 +889,7 @@ MonoBehaviour:
     m_Bits: 256
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 513
   visibleTargets: []
 --- !u!114 &114850339085476566
 MonoBehaviour:
@@ -915,6 +917,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   updateEnemiesSctipt: {fileID: 0}
   gameManager: {fileID: 0}
+  getdifficultysetting: {fileID: 0}
+  difficultySetter: {fileID: 0}
 --- !u!114 &114886626993777674
 MonoBehaviour:
   m_ObjectHideFlags: 1
