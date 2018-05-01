@@ -7273,6 +7273,12 @@ Transform:
   m_Father: {fileID: 733452575}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &657469247 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114803459513131506, guid: 87aa71201b9b5eb428fad29117337a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 365759906}
+  m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
 --- !u!1 &721129772
 GameObject:
   m_ObjectHideFlags: 0
@@ -12143,6 +12149,69 @@ Transform:
   m_Father: {fileID: 458662895}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1117305646 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1097309608706168, guid: 87aa71201b9b5eb428fad29117337a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 365759906}
+--- !u!114 &1117305647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1117305646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c81407209f85e4c87c0cda8b32868e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1288590194}
+  motionBob:
+    HorizontalBobRange: 0.2
+    VerticalBobRange: 0.2
+    Bobcurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    VerticaltoHorizontalRatio: 2
+  jumpAndLandingBob:
+    BobDuration: 0.25
+    BobAmount: 0.5
+  rigidbodyFirstPersonController: {fileID: 657469247}
+  StrideInterval: 4
+  RunningStrideLengthen: 0.722
 --- !u!1001 &1118686901
 Prefab:
   m_ObjectHideFlags: 0
@@ -12937,6 +13006,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088,
     type: 2}
   m_PrefabInternal: {fileID: 861683455}
+--- !u!20 &1288590194 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20949889413254394, guid: 87aa71201b9b5eb428fad29117337a3c,
+    type: 2}
+  m_PrefabInternal: {fileID: 365759906}
 --- !u!43 &1309590616
 Mesh:
   m_ObjectHideFlags: 0
