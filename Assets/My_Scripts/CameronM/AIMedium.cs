@@ -7,8 +7,8 @@ public class AIMedium : AI {
 
     private IEnemyState currentState;
     public FieldOfView fieldOfView;
-    
-    public GameObject TargetAcquired { get; set; }
+
+    public GameObject targetAcquired;
 
     public bool patrols;
     public bool ranged;
@@ -75,18 +75,18 @@ public class AIMedium : AI {
     {
         if (fieldOfView.visibleTargets.Count <= 0)
         {
-            TargetAcquired = null;
+            targetAcquired = null;
         }
         else
         {
-            TargetAcquired = fieldOfView.visibleTargets[0];
+            targetAcquired = fieldOfView.visibleTargets[0];
             if (!ranged && !coward)
-                agent.destination = TargetAcquired.transform.position;
+                agent.destination = targetAcquired.transform.position;
         }
 
         currentState.Execute();
 
-        if(TargetAcquired != null)
+        if(targetAcquired != null)
         {
             LookAtTarget();
         } else
@@ -139,7 +139,7 @@ public class AIMedium : AI {
 
     public void Move()
     {
-        if (TargetAcquired != null)
+        if (targetAcquired != null)
         {
             if (coward)
             {
@@ -155,15 +155,15 @@ public class AIMedium : AI {
     public Vector3 GetDirection()
     {
         //issue is here somewhere
-        return (TargetAcquired.transform.position - transform.position);
+        return (targetAcquired.transform.position - transform.position);
     }
     
     private void LookAtTarget ()
     {
-        if (TargetAcquired != null)
+        if (targetAcquired != null)
         {
             //Look at target
-            Vector3 targetDir = TargetAcquired.transform.position - transform.position;
+            Vector3 targetDir = targetAcquired.transform.position - transform.position;
             targetDir.y = 0.0f;
             float step = turnSpeed * Time.deltaTime;
             Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
@@ -265,7 +265,7 @@ public class AIMedium : AI {
     public bool InMeleeRange()
     {
         bool inMeleeRange;
-        float distance = Vector3.Distance(transform.position, TargetAcquired.transform.position);
+        float distance = Vector3.Distance(transform.position, targetAcquired.transform.position);
         if (distance <= meleeRange)
         {
             inMeleeRange = true;
@@ -281,7 +281,7 @@ public class AIMedium : AI {
         if (pathnodes.Length < 1)
             return;
 
-        if (TargetAcquired == null && path != null)
+        if (targetAcquired == null && path != null)
         {
             agent.destination = pathnodes[destPoint].position;
 

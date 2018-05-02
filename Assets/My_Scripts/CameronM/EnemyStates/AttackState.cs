@@ -13,7 +13,7 @@ public class AttackState : IEnemyState
 
     public void Execute()
     {
-        if (enemy.TargetAcquired != null)
+        if (enemy.targetAcquired != null)
         {
             enemy.spotlight.color = Color.red;
             if (enemy.coward)

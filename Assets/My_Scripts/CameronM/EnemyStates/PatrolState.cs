@@ -20,7 +20,7 @@ public class PatrolState : IEnemyState
         Patrol();
         enemy.moving = true;
         
-        if (enemy.TargetAcquired != null)
+        if (enemy.targetAcquired != null)
         {
             enemy.MyAnimator.SetBool("hasTarget", true);
             enemy.ChangeState(new AttackState());

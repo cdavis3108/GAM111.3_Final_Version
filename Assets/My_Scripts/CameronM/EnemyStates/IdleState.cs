@@ -29,7 +29,7 @@ public class IdleState : IEnemyState
             enemy.ChangeState(new PatrolState());
         }
 
-        if (enemy.TargetAcquired != null)
+        if (enemy.targetAcquired != null)
         {
             enemy.MyAnimator.SetBool("hasTarget", true);
             enemy.ChangeState(new PatrolState());
