@@ -327,7 +327,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2069790113}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.99973935
+  m_Size: 0.999843
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -772,7 +772,7 @@ RectTransform:
   m_Father: {fileID: 93915411}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.8310543}
+  m_AnchorMin: {x: 0, y: 0.83994985}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -2404,8 +2404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163.65, y: -1133.5}
-  m_SizeDelta: {x: 327.3, y: 2267}
+  m_AnchoredPosition: {x: 163.65, y: -1196.5}
+  m_SizeDelta: {x: 327.3, y: 2393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873580382
 MonoBehaviour:
@@ -2454,11 +2454,12 @@ MonoBehaviour:
     Furniture by Elcanetay\n\nLamp Model by HarpetStudio\n\nGrass And Flowers Pack
     1 by Vladislav Pochezhertsev\n\nPiano by Miroslav Uhlii\n\nPicture frames with
     photos by 3Dfrk\n\nTim's Horror Assets - The Bloody Door by Tim H.\n\nSimple Wall
-    Lamp by FlatRiver\n\n\n-------SOUND EFFECTS--------\n\nZap - ELECTRIC_ZAP_001
-    by JoelAudio\r\n\nDamaged - Grunt1 by whisperbandnumber1\n\nMenuMusic - Nine Lies
-    the Heart ed 4 by ERH\r\n\nQuit - Whoosh04 by FreqMan\r\n\nStart - UI Completed
-    Status Alert Notification by Headphaze\r\n\nClose - tone beep by pan14\n\nBeep
-    - btn402 by junggle\r"
+    Lamp by FlatRiver\n\nUnity Particle Pack by Unity Technologies\n\n-------SOUND
+    EFFECTS--------\n\nZap - ELECTRIC_ZAP_001 by JoelAudio\r\n\nDamaged - Grunt1 by
+    whisperbandnumber1\n\nMenuMusic - Nine Lies the Heart ed 4 by ERH\r\n\nQuit -
+    Whoosh04 by FreqMan\r\n\nStart - UI Completed Status Alert Notification by Headphaze\r\n\nClose
+    - tone beep by pan14\n\nBeep - btn402 by junggle\r\n\nLightning by Littlebrojay\n\nExplosion
+    by Quaker540"
 --- !u!222 &873580383
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2567,7 +2568,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.122917175, y: 0}
-  m_SizeDelta: {x: -455.7, y: 2267}
+  m_SizeDelta: {x: -455.7, y: 2393}
   m_Pivot: {x: 0.42, y: 1}
 --- !u!114 &1017782021
 MonoBehaviour:
@@ -3794,7 +3795,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 142057011}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.16894574
+  m_Size: 0.16005014
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4951,7 +4952,7 @@ RectTransform:
   m_Father: {fileID: 1340926712}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0002606511, y: 0}
+  m_AnchorMin: {x: 0.00015699863, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
