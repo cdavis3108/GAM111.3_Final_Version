@@ -109,7 +109,7 @@ public class Target : MonoBehaviour
                 {
                     Destroy(healthBar);
                     Die();
-                    self_Remove(); //destroy object
+                    Self_Remove(); //destroy object
                 }
 
                 if (healthBar != null) healthBar.transform.localScale = new Vector3((healthValue / 100), 1, 1);
@@ -140,12 +140,20 @@ public class Target : MonoBehaviour
         }
     }
 
-    void self_Remove()
+    void Self_Remove()
     {
         ScoreManager.score += scoreValue;
         //Debug.Log(ScoreManager.score);
         updateEnemiesSctipt.FindEnemiesLeft();
 
         Destroy(gameObject, 5f);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Harard")
+        {
+            TakeDamage(50f);
+        }
     }
 }

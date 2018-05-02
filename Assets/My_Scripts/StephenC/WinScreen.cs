@@ -14,7 +14,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (other.CompareTag("Player"))
             {
                 other.GetComponent<RigidbodyFirstPersonController>().enabled = false;
-                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene(4);
             }
         }

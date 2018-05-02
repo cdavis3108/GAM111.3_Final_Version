@@ -10,8 +10,10 @@ public class MainCharacter : MonoBehaviour {
 
     private void Update()
     {
-        if(Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape"))
+        {
             SceneManager.LoadScene(0);
+        }
 
         if (Input.GetKeyDown(KeyCode.F))
             flashlight.enabled = !flashlight.enabled;

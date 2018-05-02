@@ -83,16 +83,18 @@ public class PlayerHealth : MonoBehaviour
     {
         playerAudio.clip = deathClip;
         playerAudio.Play();
-
-        //gameObject.GetComponent<CharacterControler>().enabled = false;
+        
         rb.constraints = RigidbodyConstraints.None;
-        //Destroy(gameObject);
-        //Player.gameObject.SetActive(false);\
-        //GetComponent<RigidbodyFirstPersonController>().enabled = false;
-        Cursor.lockState = CursorLockMode.None;
-        
+
         // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-         SceneManager.LoadScene(5);
-        
+        SceneManager.LoadScene(5);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Hazard")
+        {
+            TakeDamage(50f);
+        }
     }
 }

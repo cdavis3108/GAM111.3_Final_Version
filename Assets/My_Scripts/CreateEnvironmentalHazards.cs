@@ -21,8 +21,8 @@ public class CreateEnvironmentalHazards : MonoBehaviour {
         {
             if (levelOne)
             {
-                pos.x += Random.Range(-130f, 130f);
-                pos.z += Random.Range(-130f, 130f);
+                pos.x += Random.Range(-120f, 120f);
+                pos.z += Random.Range(-120f, 120f);
             }
             else
             {
@@ -30,7 +30,6 @@ public class CreateEnvironmentalHazards : MonoBehaviour {
                 pos.z += Random.Range(-40f, 40f);
             }
             GameObject hazard = Instantiate(hazardPrefab, pos, transform.rotation);
-            hazard.transform.localScale = new Vector3(10f, 10f, 10f);
             Destroy(hazard, 4f);
         }
     }

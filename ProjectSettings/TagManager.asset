@@ -10,6 +10,7 @@ TagManager:
   - plane
   - DifficultySetting
   - Dead
+  - Hazard
   layers:
   - Default
   - TransparentFX
